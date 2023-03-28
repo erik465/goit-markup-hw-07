@@ -162,7 +162,7 @@ header{
     
   }
 
-  .mobile-menu-list-item{
+  .mobile-menu-list-item a{
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -189,6 +189,11 @@ header{
   }
 
   .mobile-menu-contacts-list-item:first-child{
+    margin-bottom: 40px;
+
+  }
+
+  .mobile-menu-contacts-list-item:first-child a{
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -200,11 +205,10 @@ header{
 
     color: #4D5AE5 ;
 
-    margin-bottom: 40px;
 
   }
 
-  .mobile-menu-contacts-list-item:last-child{
+  .mobile-menu-contacts-list-item:last-child a{
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
