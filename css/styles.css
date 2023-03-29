@@ -128,6 +128,7 @@ header{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    height: 100%;
 
   }
   
@@ -222,9 +223,14 @@ header{
 
 
     color: #4D5AE5 ;
-
-
   }
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .mobile-menu-contacts-list-item:first-child a{
+        font-size: 24px;
+
+    }
+}
 
   .mobile-menu-contacts-list-item:last-child a{
     font-style: normal;
@@ -243,7 +249,7 @@ header{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 16px;
   }
 
@@ -984,6 +990,7 @@ header{
     display: block;
     margin-right: 8px;
     
+    flex-shrink: 0;
 
     width: 16px;
     height: 16px;
