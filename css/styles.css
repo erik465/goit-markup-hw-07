@@ -168,7 +168,8 @@ header{
     list-style:none;
     display: flex;
     flex-direction: column;
-    margin-bottom: auto;
+    margin-bottom: 284px;
+
   }
 
   .mobile-menu{
@@ -279,13 +280,22 @@ header{
 /*- HERO -*/
 .hero{
     background-color: var(--navy-blue);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 112px 0;
     max-width: 1440px;
     margin: auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/hero-mobile-2x.jpg);
+    }
 }
 
 .hero-container{
