@@ -43,6 +43,9 @@ img{display: block;}
 
 .container{
     width: 100%;
+    max-width: 426px;
+    padding: 0 15px;
+    margin: 0 auto;
   
 }
 
@@ -111,14 +114,21 @@ header{
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
     background-color: #fff;
     z-index: 999;
 
-    padding: 80px 35px 40px 40px;
   
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+  }
+
+  .mobile-menu-container{
+    max-width: 428px;    
+    padding: 80px 35px 40px 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
   }
   
   .menu-container.is-open {
@@ -158,8 +168,14 @@ header{
     list-style:none;
     display: flex;
     flex-direction: column;
-    margin-bottom: 284px;
-    
+    margin-bottom: auto;
+  }
+
+  .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
   }
 
   .mobile-menu-list-item a{
@@ -179,6 +195,7 @@ header{
   }
 
   .mobile-menu-contacts{
+    margin-top: auto;
     margin-bottom: 48px;
   }
 
@@ -324,7 +341,7 @@ header{
 
 /*-- FEATURES --*/
 .features{
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 
 .features-list{
@@ -339,7 +356,6 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 396px;
 }
 
 .feature-icon{
@@ -389,7 +405,11 @@ header{
 
     width: 100%;
 
-    padding: 96px 82px;
+    padding: 96px 0;
+}
+
+.team-container{
+    max-width: 294px;
 }
 
 .team-heading{
@@ -406,16 +426,20 @@ header{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 .team-list-item{
     background: #fff;
     padding-bottom: 32px;
     width: 100%;
+    max-width: 264px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     
     margin-bottom: 72px;
+}
+
+.team-list-item:last-child{
+    margin: 0;
 }
 
 .team-list-item img{
@@ -478,8 +502,7 @@ header{
 /* --CUSTOMERS --*/
 
 .customers{
-    padding-top: 96px;
-    padding-bottom: 96px
+    padding: 96px 0;
 }
 
 .customers-title{
@@ -495,7 +518,7 @@ header{
     display: flex;
     flex-direction: row;
 
-    gap:24px;
+    gap:72px 16px;
 
     flex-wrap: wrap;
     justify-content: center;
@@ -748,8 +771,9 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-height: 576px;
-    width: 408px;
+
+    max-width: 408px;
+    width: 80%;
     background: #FCFCFC;
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
