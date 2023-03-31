@@ -65,7 +65,7 @@ img{display: block;}
 /* -- HEADER --*/
 header{
     display: block;
-    padding: 26px 16px;
+    padding: 26px 0;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -129,6 +129,7 @@ header{
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
 
   }
   
@@ -169,16 +170,10 @@ header{
     list-style:none;
     display: flex;
     flex-direction: column;
-    margin-bottom: 284px;
 
   }
 
-  .mobile-menu{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
-  }
+  
 
   .mobile-menu-list-item a{
     font-style: normal;
@@ -225,7 +220,7 @@ header{
     color: #4D5AE5 ;
   }
 
-@media screen and (min-width:320px) and (max-width:480px) {
+@media screen and (max-width:430px) {
     .mobile-menu-contacts-list-item:first-child a{
         font-size: 24px;
 
@@ -284,25 +279,33 @@ header{
 /* -- /HEADER -- */
 
 /*- HERO -*/
+
+
+
+
 .hero{
     background-color: var(--navy-blue);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 112px 0;
     max-width: 1440px;
     margin: auto;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/hero-tablet.jpg);
+
 }
 
+
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .hero{
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/hero-mobile-2x.jpg);
-    }
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/hero-tablet-2x.jpg);
 }
+}
+
 
 .hero-container{
     display: flex;

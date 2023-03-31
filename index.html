@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
 
@@ -23,7 +24,7 @@
             <nav class="header-nav">
                 <a href="./index.html" class="header-logo  logo">WEB<span class="header-logo-color">STUDIO</span></a>
                 <ul class="header-list">
-                    <li class="header-list-item"><a class="page-active" href="index.html">Studio</a></li>
+                    <li class="header-list-item" ><a class="page-active"  href="index.html">Studio</a></li>
                     <li class="header-list-item"><a href="portfolio.html">Portfolio</a></li>
                     <li class="header-list-item"><a href="">Contacts</a></li>
                 </ul>
@@ -433,14 +434,12 @@
     </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-            <svg class="menu-close">
-                <use href="./images/symbol-defs.svg#icon-cross"></use>
-            </svg>
-        </button>
-  
-        <div class="mobile-menu">
-            <div class="mobile-menu-container">
+        <div class="mobile-menu-container">
+                <button class="menu-toggle js-close-menu">
+                    <svg class="menu-close">
+                        <use href="./images/symbol-defs.svg#icon-cross"></use>
+                    </svg>
+                </button>
                 <ul class="mobile-menu-list">
                     <li class="mobile-menu-list-item"><a class="page-active" href="index.html">Studio</a></li>
                     <li class="mobile-menu-list-item"><a href="portfolio.html">Portfolio</a></li>
@@ -483,8 +482,7 @@
                     </a>
                 </li>
             </ul>
-            </div>  
-        </div>
+        </div>  
     </div>
 
     <script src="./scripts/mobile-menu.js"></script>
